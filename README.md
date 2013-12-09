@@ -51,4 +51,7 @@ Pour l'exécuter vous pouvez utiliser `ctrl`+`espace` ou `ctrl`+`entrer` ou le b
 
 ![Terminal](http://www.kezho.com/application/data/demo/angular-app-localhost/images/terminal.png)
 
+License
+-------
+MIT: http://kezho.mit-license.org/
 
