@@ -1,0 +1,17 @@
+<div>
+    <form ng-submit="submit()" >
+        <span class="pull-left"><img width="64" ng-src="libs/img/terminal.png" alt=""/></span>
+
+        <h3 class="pull-left home-h3">Terminal de commande</h3><span class="clearfix"></span>
+        <hr/>
+        <div class="control-group">
+            <textarea ui-keydown="{'ctrl-enter ctrl-space':'submit()'}" style="width:80%;" rows="10" ng-model="commande" ></textarea>
+        </div>
+        <div class="control-group">
+            <pre ng-show="result != null">{{result}}</pre>
+        </div>
+        <div class="control-group">
+            <input class="btn btn-primary" type="submit" value="Executer"/>
+        </div>
+    </form>
+</div>
