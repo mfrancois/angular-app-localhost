@@ -1,53 +1,52 @@
 # angular-app-localhost
 
+
 ## Description
-Ce projet sert à pimper son localhost.
-Vous connaissez surment l'interface de uwamp, ou même de wamp.
-Ces interfaces liste les projets que vous avez sur votre répertoire root `www`.
+This project was created to pimp your localhost. You probably know the wamp interface, which lists the projects you have in your root `www` directory.
 
-Ce petit projet à placer dans le `www` permet d'avoir :
+By putting this little app in the `www` directory you get:
 
-* La liste des projets.
-* Recherche dans la liste des projets.
-* Affichage du readme par projet.
-* Des outils de calcule de charge pour la méthode agile (calcule de poids avec fibonachi).
-* Un terminal pour écrire et exécuter du php rapidement.
+* A list of all projects.
+* Search functionality in the project list.
+* A readme displayed for each project.
+* Agile workload calculator (fibonacci weight caculation). 
+* A console to quickly write and execute PHP.
 
 
 ## Installation
 
-Pou l'installer il vous suffit de placer le projet à la racine de votre répertoire root en local.
+Simply place the app folder at the root of the root `www` directory of your local environment.
 
 
-### Liste des projets
+### Project list
 
-La liste des projets remonte la liste de ce que vous avez dans le répertoire root.
-Il va chercher le favicon s'il est présent, sinon il affiche une image par défaut.
+The project list displays the list of everything in your root directory.
+If a favicon is available it will be used, otherwise a default favicon will be used.
+
+![List](http://www.kezho.com/application/data/demo/angular-app-localhost/images/all.png)
 
 
-![Liste](http://www.kezho.com/application/data/demo/angular-app-localhost/images/all.png)
-
-
-### Recherche
-La recherche s'effectue sur le titre du document.
+### Search
+The search feature searches document titles.
 
 ![Search](http://www.kezho.com/application/data/demo/angular-app-localhost/images/search.png)
 
+
 ### Readme
-Lorsque vous cliquez sur l'icon du projet l'outil charge le readme, s'il n'est pas présent il affiche na.
+When you click a project icon, the project's readme file will be loaded. If no readme file is available, "na" (not applicable) is displayed.
 
 ![Readme](http://www.kezho.com/application/data/demo/angular-app-localhost/images/all.png)
 
-### Calcule de charges
+### Workload calculator
 
-Outil de calcule de charge basé sur la suite de fibonachi. Cella permet simplement de donner le nombres de jours hommes en fonction des poids affecté à une tache.
+Tool for calculating workload, based on the fibonacci sequence. This allows simple calculation of the number of man-hours (or woman-hours) required according to the difficulty assigned to a task.
 
 ![Charge1](http://www.kezho.com/application/data/demo/angular-app-localhost/images/poids.png)
 ![Charge2](http://www.kezho.com/application/data/demo/angular-app-localhost/images/poids2.png)
 
 ### Terminal
-Permet de saisir du code php et de l'exécuté et d'avoir son retour.
-Pour l'exécuter vous pouvez utiliser `ctrl`+`espace` ou `ctrl`+`entrer` ou le boutton d'envois.
+Allows input and execution of php code.
+To execute code you can use `ctrl`+`space`, or `ctrl`+`enter`, or the submit button.
 
 ![Terminal](http://www.kezho.com/application/data/demo/angular-app-localhost/images/terminal.png)
 
