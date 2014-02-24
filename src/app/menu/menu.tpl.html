@@ -1,0 +1,5 @@
+<ul class="nav nav-list menuclass " >
+    <li ng-repeat="menu in menus" ui-route="{{menu.link}}" ng-class="{active:$uiRoute}" class="{{menu.class}}">
+        <a href="{{menu.link}}"  ><i class="{{menu.icon}}"></i>{{menu.libelle}}</a>
+    </li>
+</ul>

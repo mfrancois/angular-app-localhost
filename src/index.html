@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="dist" ng-controller="AppCtrl">
+<head>
+    <title>ng-boilerplate</title>
+    <!-- social media tags -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>"/>
+    <% }); %>
+
+    <!--[if IE 7>
+    <link rel="stylesheet" href="assets/font-awesome-ie7.min.css />
+    <![endif]-->
+
+    <!-- compiled CSS --><% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script>
+    <% }); %>
+
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a href="/" class="icon brand">local</a>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav">
+                </ul>
+                <ul class="nav pull-right">
+                    <li>
+                        <form class="navbar-search pull-right">
+                            <input type="text" class="search-query" ng-model="query" placeholder="Rechercher">
+                        </form>
+                    </li>
+                    <li class="divider-vertical"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2" ui-view="menu"></div>
+        <div class="container" ui-view="main"></div>
+    </div>
+</div>
+</body>
+</html>

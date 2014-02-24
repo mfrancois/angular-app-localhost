@@ -1,0 +1,35 @@
+<div class="span6 thumbnail">
+    <div id="docs-list" class="">
+        <span class="pull-left"><img ng-src="/assets/img/documentation.png" class="padTop" alt=""/></span>
+
+        <h3 class="pull-left home-h3">Projets</h3>
+        <span class="clearfix"></span>
+        <hr/>
+
+        <div id="docs-lists-js">
+            <ul class="unstyled list">
+                <li class="afolder" ng-repeat="project in projects | filter:query">
+                    <div class="span1 offset1">
+                        <img class="img-polaroid" ng-click="open(project)" style="width: 40px; height: 40px;" ng-src="{{project.image}}" />
+                    </div>
+                    <div class="span10">
+                        <a href="/{{project.folder}}/" target="_blank"><span class="aLabel">{{project.folder}}</span></a>
+
+                        <div class="aDetails">
+                            <p class="aDescription">Date de derni&egrave;re modification : {{project.modification}}</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="span4 thumbnail">
+    <div id="prez-list" class="">
+        <span class="pull-left"><img ng-src="/assets/img/presentations.png" class="padTop" alt=""/></span>
+        <h3 class="pull-left home-h3">Readme {{current_selection}}</h3>
+        <span class="clearfix"></span>
+        <hr/>
+        <div ng-bind-html-unsafe="mdproject"></div>
+    </div>
+</div>
