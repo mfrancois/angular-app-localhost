@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html ng-app="dist" ng-controller="AppCtrl">
 <head>
-    <title>ng-boilerplate</title>
+    <title>Distillerie angular application</title>
     <!-- social media tags -->
+    <meta property="og:title" content="Distillerie angular application"/>
+    <meta property="og:type" content="website"/>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
     <link rel="stylesheet" type="text/css" href="<%= file %>"/>
@@ -15,7 +17,6 @@
     <!-- compiled CSS --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script>
     <% }); %>
-
 </head>
 <body>
 
