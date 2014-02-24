@@ -1,12 +1,12 @@
 {
   "author": "Tequilarapido",
-  "name": "teq-angular",
-  "version": "0.1.0",
-  "homepage": "http://teq-angular.dev",
+  "name": "application-angular-localhost",
+  "version": "0.2.0",
+  "homepage": "http://dist-angular.dev",
   "bugs": "",
   "repository": {
     "type": "git",
-    "url": "git@tequilarapido.beanstalkapp.com:/teq-angular.git"
+    "url": "git@github.com:mfrancois/angular-app-localhost.git"
   },
   "dependencies": {},
   "devDependencies": {
