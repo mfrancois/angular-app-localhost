@@ -1,4 +1,4 @@
-# angular-app-localhost
+# angular-app-localhost [![Build Status](https://travis-ci.org/mfrancois/angular-app-localhost.png?branch=feature/travis)](https://travis-ci.org/mfrancois/angular-app-localhost)
 
 
 ## Description
